@@ -1,0 +1,67 @@
+.top-container{
+  display:grid;
+  grid-gap:20px;
+  grid-template-areas:
+          'picture side-box-a'
+          'picture side-box-b';
+  grid-template-columns: 2fr 1fr;
+}
+
+.picture{
+  grid-area: picture;
+  min-height: 400px;
+  background-size:cover;
+  background: url(../images/pexels-photo-crowd.jpeg) center; //not the entire picture is shown, but it actually looks better this way
+  padding: 3rem;
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: $shadow;
+}
+
+.picture h1{
+  font-size:4rem;
+  font-family:$h-font;
+  color:$dark;
+  margin-bottom:0;
+}
+
+.picture h4{
+  font-size:1.3rem;
+  font-family:$p-font;
+  color:$light;
+  margin-top:0;
+}
+
+//side boxes
+.side-box{
+  background:$primary;
+  display:grid;
+  align-items: center;
+  justify-items: center;
+  padding:1.5rem;
+  box-shadow:$shadow;
+}
+
+.side-box h3{
+  font-family:$h-font;
+  font-size:2rem;
+}
+
+.side-box h3:hover{
+  @include textGradient();
+}
+
+.side-box p{
+  font-size:1rem;
+  font-family:$p-font;
+}
+
+side-box-a{
+  grid-area:side-box-a;
+}
+
+side-box-b{
+  grid-area:side-box-b;
+}

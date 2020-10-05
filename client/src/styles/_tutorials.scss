@@ -1,0 +1,49 @@
+.tutorial-wrapper{
+  @include defWrapper();
+  grid-template-columns: 1fr 1fr;
+}
+
+.head{
+  padding:20px 20px 20px 50px;
+}
+
+.head h1{
+  font-family: $h-font;
+  font-size:4rem;
+  margin:0;
+}
+
+.head h5{
+  font-family: $p-font;
+  font-size:1rem;
+}
+
+.video-box{
+  background:$primary;
+  box-shadow: $shadow;
+  padding: 20px;
+}
+
+.video-container{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:15px;
+}
+
+.video-container p{
+  font-family: $p-font;
+}
+
+.video-text{
+  display:grid;
+  grid-template-rows:1fr 1fr;
+}
+
+.video-text h3{
+  font-family: $h-font;
+  font-size:1.8rem;
+}
+
+.video-text h3:hover{
+  @include textGradient();
+}

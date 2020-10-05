@@ -1,0 +1,41 @@
+.top-nav-wrapper{
+  background:$grey;
+  padding:$def-padding;
+  box-shadow:$shadow;
+}
+
+.top-nav-wrapper ul{
+  display:grid;
+  grid-gap:20px;
+  list-style:none;
+  padding:0;
+}
+
+.top-nav-wrapper a{
+  background:$primary;
+  display:block;
+  text-decoration: none;
+  padding:0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:1.1rem;
+  box-shadow: $shadow;
+  color:$dark;
+}
+
+.top-nav-wrapper a:hover{
+  background:$bkg-horizontal;
+  color:$light;
+}
+
+.top-nav-wrapper a:active{
+  transform: scale(0.9);
+}
+
+.default-menu{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.user-menu{
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}

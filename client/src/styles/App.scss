@@ -1,0 +1,62 @@
+//main style file
+
+//functions
+@mixin flexCenter{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+@mixin textGradient {
+  background: $bkg-horizontal;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin defWrapper{
+  display:grid;
+  grid-gap:20px;
+  margin:0 50px 30px 50px;
+  background:$light;
+}
+
+//imports
+@import 'src/styles/styleVariables';
+@import 'src/styles/navigationBar';
+@import './_loginRegister.scss';
+@import './_forms.scss';
+@import './_Home.scss';
+@import './_tutorials.scss';
+@import './_roadmap.scss';
+@import './_accordion.scss';
+@import './_profile.scss';
+@import './_userBoard.scss';
+
+//general styling
+html{
+  box-sizing: border-box;
+  color:$dark;
+}
+
+body{
+  background:$bkg-vertical;
+  line-height: 1.4;
+  margin:0;
+}
+
+.wrapper{
+  @include defWrapper();
+}
+
+.content{
+  min-height:735px;
+}
+
+.alert-danger {
+  color: $dark;
+  @include flexCenter();
+}
+
+.alert {
+  color: $dark;
+}

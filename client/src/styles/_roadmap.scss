@@ -1,0 +1,36 @@
+.roadmap-intro h1{
+  font-family:$h-font;
+  font-size:4rem;
+  margin:20px;
+}
+
+.roadmap-intro p{
+  font-family:$p-font;
+  font-size:1rem;
+  margin:20px;
+}
+
+.roadmap-wrapper{
+  display:grid;
+  grid-gap:20px;
+  grid-template-areas:
+      'accordion-wrapper roadmap-content';
+  grid-template-columns: 1fr 4fr;
+}
+
+.roadmap-content{
+  background:$grey;
+  padding:0 100px 20px 50px;
+  min-height: 525px;
+  box-shadow:$shadow;
+}
+
+.roadmap-content h2{
+  font-family: $h-font;
+  font-size:3rem;
+}
+
+.roadmap-content p{
+  font-family: $p-font;
+  font-size: 1rem;
+}

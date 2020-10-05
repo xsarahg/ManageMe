@@ -1,0 +1,38 @@
+.box-container.box {
+  @include flexCenter();
+  max-width:350px;
+  padding:40px 40px;
+  margin-top:5%;
+  background:$primary;
+  box-shadow:$shadow;
+}
+
+.box-container label {
+  font-family:$p-font;
+  color:$dark;
+  display: block;
+  margin-top: 10px;
+  padding:1rem;
+}
+
+.box {
+  background-color: $grey;
+  padding: 20px 25px 30px;
+  margin: 50px auto 25px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.box-container ul{
+  list-style: none;
+  padding:0;
+}
+
+.box-container a{
+  text-decoration: none;
+  color:$dark;
+  @include flexCenter();
+}
+
+.box-container a:hover{
+  transform: scale(1.1);
+}
