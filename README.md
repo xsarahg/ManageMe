@@ -17,6 +17,3 @@ The backend will run on port 8090.
 The backend will run on port 3000
 
 Enjoy the application! 
-
-Greetings, 
-Thijs Lagrand & Sarah Goossens
